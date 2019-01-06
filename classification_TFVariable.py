@@ -39,7 +39,7 @@ y_val = utils.convert_labels(y_val,n_classes)
 # Step 2: construct a network model in tensorflow (TF) (graph)
 
 learning_rate = 1e-3
-n_epoch = 500
+n_epoch = 1000
 N_train = X_train.shape[0]
 batch = N_train # use batch gradient descent. If batch < N_train: use mini-batch
 N_iter = np.round(N_train/batch).astype(np.int32)
